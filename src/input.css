@@ -9,6 +9,9 @@
     --color-purple-l:#5119B718;
     --color-black-d:#212B36;
     --color-black-l:#637381;
+    --color-light-l:#F4F6F8;
+    --color-sky-l:#528BFF;
+
 }
 
 @layer components{
