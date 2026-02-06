@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@theme {
+    --color-body-1:#F8F8F8;
+    --color-ww:#919EAB;
+    --color-pp:#637381;
+    --color-blue-d:#155EEF;
+    --color-blue-l:#155EEF18;
+}
+
+@layer components{
+    .icon-click{
+        @apply transition-all;}
+        .icon-click:hover{
+            @apply bg-blue-l  border-1 border-ww text-blue-d;
+        }
+       
+    }
