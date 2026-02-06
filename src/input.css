@@ -5,13 +5,17 @@
     --color-pp:#637381;
     --color-blue-d:#155EEF;
     --color-blue-l:#155EEF18;
+    --color-purple:#5119B7;
+    --color-purple-l:#5119B718;
+    --color-black-d:#212B36;
+    --color-black-l:#637381;
 }
 
 @layer components{
     .icon-click{
-        @apply transition-all;}
+        @apply transition-all duration-200;}
         .icon-click:hover{
-            @apply bg-blue-l  border-1 border-ww text-blue-d;
+            @apply bg-blue-l  border border-zinc-200 rounded-md  text-blue-d;
         }
        
     }
