@@ -22,5 +22,9 @@
         .icon-click:hover{
             @apply bg-blue-l  border border-zinc-200 rounded-md  text-blue-d;
         }
+        
        
+    }
+    .hidden{
+        display: hidden;
     }

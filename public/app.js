@@ -1,15 +1,13 @@
-let arrowButton = document.querySelector(".arrow-right");
-let textHover = document.querySelector(".textHover");
-let isRight = false;
-function turnButton(){
-    if(isRight){
-        arrowButton.setAttribute("src" , "./imgs/p0.png");
-        textHover.style.color= #155EEF;
-        isRight = false; 
-      }else{
-        arrowButton.setAttribute("src" , "./imgs/p2.png");
-        isRight =true;
-      }
-    
+let iconV2 = document.querySelector(".iconV2");
+let leftSide = document.querySelector(".leftSide");
+let openSide = document.querySelector(".openSide");
+let threeBtn = document.querySelector(".threeBtn");
+
+function closeBar(){
+  leftSide.classList.add(hidden);
 }
-arrowButton.addEventListener("click" , turnButton);
+function openBar(){
+  leftSide.classList.remove(hidden);
+}
+iconV2.addEventListener("click" , closeBar);
+threeBtn.addEventListener("click" , openBar);
