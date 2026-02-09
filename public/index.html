@@ -3,21 +3,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
-    <title>Document</title>
+    <title>Lead-Assist-Task(By Z.khivveh)</title>
 </head>
 <body>
-    <main class=" flex">
-        <!-- left side -->
-        <div class="flex flex-col gap-y-2 w-8 h-8">
+    <!-- ICONS -->
+     <div class="flex justify-between">
+        <div class="flex flex-col m-2 gap-2 w-8 h-8 lg:hidden shrink-0">
             <img class=" bg-black/10 openSide   rounded-xl cursor-pointer " src="./imgs/ic-eva_more-vertical-fill.png" alt="ic">
             <img class=" bg-black/10 closeIcon  rounded-xl cursor-pointer" src="./imgs/v2.png" alt="v2">        
         </div>
-        <section class="hidden leftSide  ml-4 w-70 md:flex md:flex-col justify-between border-r  border-zinc-200">
+        <div class="flex flex-col m-2 gap-2  md:hidden w-8 h-8 shrink-0">
+           <img class=" bg-black/10 openSideR   rounded-xl cursor-pointer " src="./imgs/ic-eva_more-vertical-fill.png" alt="ic">
+           <img class=" bg-black/10 closeIconR  rounded-xl cursor-pointer" src="./imgs/v2.png" alt="v2">        
+       </div>
+     </div>
+    <main class="flex">
+         <!-- left side -->
+        <section class="hidden leftSide ml-4 min-w-50 lg:flex lg:flex-col justify-between border-r border-zinc-200">
             <div class="mr-4">
                 <!--! logo -->
                 <div>
                 <img class="my-6" src="./imgs/Logo - Full.png" alt="logo"></div>
-            <!-- search -->
+            <!--! search -->
             <div class="flex justify-start items-center w-248px py-1.5 h-40px border border-zinc-200 rounded-md">
                 <img class="px-4" src="./imgs/primary-shape.png" alt="search">
                 <input class="text-ww outline-none text-4  font-normal"  type="text" placeholder="Search..." >
@@ -169,14 +176,15 @@
             
             <!-- ! market -->
             <div>
-               <a class="mb-10 mx-4 h-11 bg-purple-l rounded-md p-1 flex items-center gap-4" href="#">
+               <a class="mb-10 mx-4 h-12 bg-purple-l rounded-md p-1 flex items-center gap-4" href="#">
                    <img class="w-6 h-6" src="./imgs/Marketplace.png" alt="Marketplace">
                    <span class=" capitalize text-purple text-5 font-medium">Marketplace</span>
                </a>
               </div>
       </section>
+       
       <!-- center side -->
-       <section class="w-174  mt-20 border-r border-zinc-200 flex flex-col justify-between">
+       <section class="max-w-190 centerSide  mt-20 border-r border-zinc-200 flex flex-col justify-between">
         <div class=" ">
             <!-- !top of chat-->
             <div class="flex justify-between py-3 px-5 border-y border-zinc-200">
@@ -268,12 +276,9 @@
              </footer> 
        </section>
         <!-- right side -->
-       <div class="flex flex-col gap-y-2 w-8 h-8">
-            <img class=" bg-black/10 openSideR   rounded-xl cursor-pointer md:hidden block" src="./imgs/ic-eva_more-vertical-fill.png" alt="ic">
-            <img class=" bg-black/10 closeIconR  rounded-xl cursor-pointer" src="./imgs/v2.png" alt="v2">        
-        </div> 
-        <section class="my-5 w-auto hidden md:flex md:flex-col rightSide">
-            <div class="sm:flex hidden border-b border-zinc-200 mt-5 w-full justify-end items-center gap-x-4 mr-6">
+       
+        <section class="my-5 w-140 hidden md:flex md:flex-col rightSide">
+            <div class="flex   w-full justify-end items-center gap-x-4 mr-6">
              <!-- ! *1* -->
              <div class="w-28 h-10 flex  gap-3 items-center justify-center bg-sky-l/30 rounded-3xl">
                  <img class="w-4 h-4" src="./imgs/kk.png" alt="kk">
@@ -298,21 +303,21 @@
             </div>
             <div class="">
              <!-- ! center -->
-             <div class="flex flex-col justify-center items-center border-b border-zinc-200 ">
-                 <div class="w-20 ml-6 mt-11 mr-6 h-20 rounded-full bg-green-600/90 flex justify-center items-center">
+             <div class="flex flex-col border-t border-zinc-200 mt-5 justify-center items-center border-b border-zinc-200 ">
+                 <div class="w-20 ml-6 mt-11 mr-6 h-20 rounded-full bg-green-500 flex justify-center items-center">
                      <span class="text-white font-medium text-2xl">TM</span>
                  </div>
                  <div class="flex flex-col justify-center items-center pl-5">
-                     <h2 class="text-black-d text-xl sm:text-3xl font-bold my-2 ">Tiffany May</h2>
-                     <span class="text-black-d/80 text-sm sm:text-xl ">johnsmith@abc.com</span> 
+                     <h2 class="text-black-d text-3xl font-bold my-2 ">Tiffany May</h2>
+                     <span class="text-black-d/80 text-xl ">johnsmith@abc.com</span> 
                  </div>
      
                  <div class="flex mr-6 justify-center items-center gap-4 my-6 ml-6"> 
-                     <div class="md:w-50 md:h-14 w-30 h-10 bg-sky-l/15 rounded-md flex justify-center items-center gap-x-2 ">
+                     <div class="lg:w-35 lg:h-14 w-30 h-10 bg-sky-l/15 rounded-md flex justify-center items-center gap-x-2 ">
                          <img class="w-6 h-6 " src="./imgs/start icon.png" alt="start">
                          <span class="text-blue-d/90 text-xl font-medium cursor-pointer">Call</span>
                      </div>
-                     <div class="md:w-50 md:h-14 w-30 h-10 bg-sky-l/15 rounded-md flex justify-center items-center gap-x-2 ">
+                     <div class="lg:w-35 lg:h-14 w-30 h-10 bg-sky-l/15 rounded-md flex justify-center items-center gap-x-2 ">
                          <img class="w-6 h-6 " src="./imgs/start2.png" alt="start2">
                          <span class="text-blue-d/90 text-xl font-medium cursor-pointer">Add Note</span>
                      </div>
@@ -321,8 +326,8 @@
             </div>
             <!-- !Disposition: -->
             <div>
-                <div class="flex flex-cols sm:flex-rows items-center justify-center gap-4 my-6">
-                    <span class="text-black-d/95 font-medium text-xl">Disposition:</span>
+                <div class="flex flex-cols lg:flex-wrap items-center justify-center gap-4 my-6">
+                    <span class="text-black-d/95 font-medium text-xl hidden lg:block">Disposition:</span>
                     <select class="w-57 h-11 font-medium bg-sky-l/15 outline-none rounded-md text-black-d font-medium" name="custom" id="">
                       <option value="Converted">Converted</option>
                       <option value="Converted">Converted</option>
@@ -330,7 +335,7 @@
                  </div>
                  <div class="flex items-center justify-center gap-x-4 my-6">
                      <span class="text-black-d/95 font-medium text-xl">Tags:</span>
-                     <div class="flex gap-x-2">
+                     <div class="flex  gap-2">
                          <div class="w-23 h-6 bg-blue-l p-1 flex items-center justify-around rounded-md ">
                              <span class="text-blue-d text-sm font-bold">New Lead</span>
                              <img src="./imgs/v1.png" alt="v1">
@@ -352,7 +357,7 @@
                  <img src="./imgs/edit-small-2.png" alt="edit-small-2">
              </div>
              <!-- !INFORMATION -->
-             <div class="m-6 flex flex-col gap-4 ">
+             <div class="m-6 flex flex-col  gap-4 ">
                  <!-- ----------------1 -->
                  <div class="grid grid-cols-2 items-center gap-2">
                      <!-- right -->
@@ -442,7 +447,7 @@
                  
              
              <!-- !============ -->
-             <div class="w-108 h-14 m-4 bg-sky-l/15 rounded-md flex justify-center items-center gap-x-2 ">
+             <div class="lg:w-108 w-54 h-14 m-4 bg-sky-l/15 rounded-md flex justify-center items-center gap-x-2 ">
                  <img class="w-6 h-6 " src="./imgs/v8.png" alt="v8">
                  <span class="text-blue-d text-xl font-bold">Add a property</span>
              </div>
