@@ -38,3 +38,20 @@ closeIconR.addEventListener("click" , closeR);
 closeIcon.addEventListener("click" , closeL);
 openSide.addEventListener("click" , openL);
 openSideR.addEventListener("click" , openR);
+
+let playIcon = document.querySelector(".playIcon");
+let music = document.querySelector(".audio");
+let pauseIcon = document.querySelector(".pauseIcon");
+
+function playIconHandler (){
+    music.play();
+    pauseIcon.classList.remove("hidden");
+    playIcon.classList.add("hidden");
+}
+function pauseIconHandler (){
+music.pause();
+playIcon.classList.remove("hidden");
+pauseIcon.classList.add("hidden");
+}
+pauseIcon.addEventListener("click" , pauseIconHandler);
+playIcon.addEventListener("click" ,playIconHandler);
